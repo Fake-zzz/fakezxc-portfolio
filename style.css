@@ -117,11 +117,11 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    /* Sempre maior que a viewport, mantendo proporção 16:9 */
     width: max(100vw, 177.78vh);
     height: max(56.25vw, 100vh);
     transform: translate(-50%, -50%);
-    filter: blur(18px) brightness(0.28) saturate(1.4);
+    /* Sem blur — só escurece. Muito mais leve pra GPU */
+    opacity: 0.25;
     pointer-events: none;
   }
   #heroBgVideo iframe {
@@ -257,16 +257,16 @@
   /* REVEAL ANIMATION */
   .reveal {
     opacity: 0;
-    transform: translateY(48px);
-    transition: opacity 0.8s cubic-bezier(0.16,1,0.3,1), transform 0.8s cubic-bezier(0.16,1,0.3,1);
+    transform: translateY(24px);
+    transition: opacity 0.45s ease-out, transform 0.45s ease-out;
   }
   .reveal.visible { opacity: 1; transform: translateY(0); }
-  .reveal-delay-1 { transition-delay: 0.1s; }
-  .reveal-delay-2 { transition-delay: 0.2s; }
-  .reveal-delay-3 { transition-delay: 0.3s; }
-  .reveal-delay-4 { transition-delay: 0.4s; }
-  .reveal-delay-5 { transition-delay: 0.5s; }
-  .reveal-delay-6 { transition-delay: 0.6s; }
+  .reveal-delay-1 { transition-delay: 0.06s; }
+  .reveal-delay-2 { transition-delay: 0.12s; }
+  .reveal-delay-3 { transition-delay: 0.18s; }
+  .reveal-delay-4 { transition-delay: 0.22s; }
+  .reveal-delay-5 { transition-delay: 0.26s; }
+  .reveal-delay-6 { transition-delay: 0.30s; }
 
   /* PORTFOLIO */
   #portfolio { padding-top: 120px; }
@@ -322,16 +322,20 @@
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
     width: 54px; height: 54px;
-    background: rgba(192,15,39,0.85);
+    background: rgba(192,15,39,0.75);
     border-radius: 50%;
     display: flex; align-items: center; justify-content: center;
     z-index: 3;
-    opacity: 0;
-    transition: opacity 0.3s, transform 0.3s;
-    backdrop-filter: blur(4px);
+    opacity: 0.85;
+    transition: opacity 0.3s, transform 0.3s, background 0.3s;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.4);
   }
   .play-btn svg { width: 20px; height: 20px; fill: white; margin-left: 3px; }
-  .video-card:hover .play-btn { opacity: 1; transform: translate(-50%,-50%) scale(1.08); }
+  .video-card:hover .play-btn, .short-card:hover .play-btn {
+    opacity: 1;
+    transform: translate(-50%,-50%) scale(1.12);
+    background: rgba(192,15,39,1);
+  }
 
   .video-edit-btn {
     position: absolute;
@@ -779,6 +783,19 @@
     background: rgba(29,161,242,0.2);
     border-color: #1da1f2;
     box-shadow: 0 0 36px rgba(29,161,242,0.3);
+    transform: translateY(-3px);
+    color: #fff;
+  }
+
+  .btn-whatsapp {
+    background: rgba(67,216,84,0.1);
+    border: 1.5px solid rgba(67,216,84,0.3);
+    color: #43D854;
+  }
+  .btn-whatsapp:hover {
+    background: rgba(67,216,84,0.2);
+    border-color: #43D854;
+    box-shadow: 0 0 36px rgba(67,216,84,0.3);
     transform: translateY(-3px);
     color: #fff;
   }

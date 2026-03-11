@@ -71,6 +71,13 @@ function applyLang() {
   document.querySelectorAll('[data-en]').forEach(el => {
     el.textContent = lang === 'en' ? el.dataset.en : el.dataset.pt;
   });
+  // WhatsApp link muda conforme o idioma
+  const waBtn = document.getElementById('btnWhatsapp');
+  if (waBtn) {
+    waBtn.href = lang === 'pt'
+      ? 'https://wa.me/5511961649755?text=Ol%C3%A1.%20Quero%20fazer%20um%20or%C3%A7amento!'
+      : "https://wa.me/5511961649755?text=Hello.%20I'd%20like%20to%20request%20a%20quote!";
+  }
 }
 
 // ===== VIDEO CARDS =====
