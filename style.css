@@ -230,7 +230,7 @@
 
   /* SECTIONS */
   section {
-    padding: 100px 5%;
+    padding: 72px 5%;
     max-width: 1300px;
     margin: 0 auto;
   }
@@ -508,7 +508,9 @@
   .shorts-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 16px;
+    max-width: 720px;
+    margin: 0;
   }
 
   .short-card {
@@ -560,7 +562,7 @@
     align-items: center;
     gap: 12px;
     cursor: pointer;
-    min-width: 100px;
+    min-width: 124px;
     text-decoration: none;
     color: var(--white);
     transition: transform 0.3s;
@@ -568,14 +570,14 @@
   .channel-card:hover { transform: translateY(-6px); }
 
   .channel-avatar {
-    width: 88px; height: 88px;
+    width: 112px; height: 112px;
     border-radius: 50%;
     overflow: hidden;
     border: 2.5px solid rgba(192,15,39,0.3);
     transition: border-color 0.3s, box-shadow 0.3s;
     background: #2a0a10;
     display: flex; align-items: center; justify-content: center;
-    font-size: 32px;
+    font-size: 40px;
   }
   .channel-card:hover .channel-avatar {
     border-color: var(--red);
@@ -671,7 +673,7 @@
     background: rgba(231,216,217,0.04);
     border: 1px solid rgba(192,15,39,0.15);
     border-radius: 16px;
-    padding: 24px 28px;
+    padding: 18px 22px;
   }
 
   .stat-label {
@@ -705,7 +707,7 @@
     background: linear-gradient(135deg, rgba(192,15,39,0.12), rgba(192,15,39,0.04));
     border: 1px solid rgba(192,15,39,0.3);
     border-radius: 16px;
-    padding: 28px;
+    padding: 20px;
     text-align: center;
     margin-top: 4px;
   }
@@ -750,7 +752,7 @@
     display: flex;
     align-items: center;
     gap: 12px;
-    padding: 18px 36px;
+    padding: 14px 28px;
     border-radius: 50px;
     font-family: 'Outfit', sans-serif;
     font-size: 15px;
