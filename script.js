@@ -40,8 +40,8 @@ let shortsVideos = [
 ];
 
 let channels = [
-  { name: 'Delayed MC', url: 'https://www.youtube.com/@delayedmc', img: 'images/4SCbBkZ.png' },
-  { name: 'SONBLACKS', url: 'https://www.youtube.com/@sonblacks', img: 'images/son.jpg' },
+  { name: 'Delayed MC', url: 'https://www.youtube.com/@delayedmc', img: 'images/4SCbBkZ.png', subs: '62.4K' },
+  { name: 'SONBLACKS', url: 'https://www.youtube.com/@sonblacks', img: 'images/son.jpg', subs: '236' },
 ];
 
 // ===== CURSOR =====
@@ -167,7 +167,8 @@ function renderChannels() {
       <div class="channel-avatar">
         ${ch.img ? `<img src="${ch.img}" alt="${ch.name}">` : `<span>${ch.emoji}</span>`}
       </div>
-      <span class="channel-name">${ch.name}</span>`;
+      <span class="channel-name">${ch.name}</span>
+      ${ch.subs ? `<span class="channel-subs">${ch.subs} subs</span>` : ''}`;
     track.appendChild(a);
   });
 }
@@ -401,6 +402,19 @@ window.addEventListener('scroll', () => {
   else glow.classList.remove('visible');
 
 }, { passive: true });
+
+// ===== SMOOTH SCROLL =====
+document.querySelectorAll('nav a[href^="#"]').forEach(link => {
+  link.addEventListener('click', function(e) {
+    const target = document.querySelector(this.getAttribute('href'));
+    if (!target) return;
+    e.preventDefault();
+    const top = target.getBoundingClientRect().top + window.scrollY - 80;
+    document.documentElement.scrollTo({ top, behavior: 'smooth' });
+    document.body.scrollTo({ top, behavior: 'smooth' });
+    window.scrollTo({ top, behavior: 'smooth' });
+  });
+});
 
 // ===== INIT =====
 renderMainGrid();
