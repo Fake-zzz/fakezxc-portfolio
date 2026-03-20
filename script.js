@@ -41,7 +41,7 @@ let shortsVideos = [
 ];
 
 let channels = [
-  { name: 'Smurfzin', url: 'https://www.youtube.com/@Smurfzin', img: 'images/smufprofile.jpg', subs: '2.13M' },
+  { name: 'Smurfzin', url: 'https://www.youtube.com/@Smurfzin', img: 'images/smurfprofile.jpg', subs: '2.13M' },
   { name: 'Delayed MC', url: 'https://www.youtube.com/@delayedmc', img: 'images/4SCbBkZ.png', subs: '62.4K' },
   { name: 'SONBLACKS', url: 'https://www.youtube.com/@sonblacks', img: 'images/son.jpg', subs: '236' },
 ];
