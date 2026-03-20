@@ -26,6 +26,7 @@ let lang = 'en';
 let carouselIndex = 0;
 
 let portfolioVideos = [
+  { type: 'youtube', url: 'https://youtu.be/GqAkNSdwUuM', section: 'portfolio' },
   {type:  'youtube', url: 'https://youtu.be/Um4WwpMpDdE', thumb: 'images/thumb3.png', section: 'portfolio'},
   { type: 'youtube', url: 'https://youtu.be/tYbc-T-UYng', section: 'portfolio' },
   { type: 'youtube', url: 'https://youtu.be/klBS2gSbKws', section: 'portfolio' },
@@ -40,6 +41,7 @@ let shortsVideos = [
 ];
 
 let channels = [
+  { name: 'Smurfzin', url: 'https://www.youtube.com/@Smurfzin', img: 'images/smufprofile.jpg', subs: '2.13M' }
   { name: 'Delayed MC', url: 'https://www.youtube.com/@delayedmc', img: 'images/4SCbBkZ.png', subs: '62.4K' },
   { name: 'SONBLACKS', url: 'https://www.youtube.com/@sonblacks', img: 'images/son.jpg', subs: '236' },
 ];
