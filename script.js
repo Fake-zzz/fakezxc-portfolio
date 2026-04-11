@@ -26,12 +26,13 @@ let lang = 'en';
 let carouselIndex = 0;
 
 let portfolioVideos = [
+  { type: 'youtube', url: 'https://youtu.be/eP33HKyUKOU', section: 'portfolio' },
   { type: 'youtube', url: 'https://youtu.be/SpKBJxTKNjU', section: 'portfolio' },
   { type: 'youtube', url: 'https://youtu.be/Co7QfOb1NQ4', section: 'portfolio' },
   { type: 'youtube', url: 'https://youtu.be/mJ6uk5oh30Y?t=5', section: 'portfolio' },
   { type: 'youtube', url: 'https://youtu.be/GqAkNSdwUuM', section: 'portfolio' },
-  {type:  'youtube', url: 'https://youtu.be/Um4WwpMpDdE', thumb: 'images/thumb3.png', section: 'portfolio'},
   { type: 'youtube', url: 'https://youtu.be/tYbc-T-UYng', section: 'portfolio' },
+  {type:  'youtube', url: 'https://youtu.be/Um4WwpMpDdE', thumb: 'images/thumb3.png', section: 'portfolio'},
   { type: 'youtube', url: 'https://youtu.be/klBS2gSbKws', section: 'portfolio' },
   { type: 'youtube', url: "https://youtu.be/a-l-3gzOOFc", section: 'portfolio' },
   { type: 'youtube', url: "https://youtu.be/FA0yUfGr1do", thumb: "images/thumb4.png", section: 'portfolio' },
@@ -46,6 +47,7 @@ let shortsVideos = [
 let channels = [
   { name: 'Smurfzin', url: 'https://www.youtube.com/@Smurfzin', img: 'images/smurfprofile.jpg', subs: '2.13M' },
   { name: 'Delayed MC', url: 'https://www.youtube.com/@delayedmc', img: 'images/4SCbBkZ.png', subs: '62.4K' },
+  { name: 'lobbiart', url: 'https://www.youtube.com/@lobbiartENG', img: 'images/lobbiart.jpg', subs: '1.3K' },
   { name: 'SONBLACKS', url: 'https://www.youtube.com/@sonblacks', img: 'images/son.jpg', subs: '236' },
 ];
 
