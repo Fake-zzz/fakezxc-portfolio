@@ -41,7 +41,7 @@ let portfolioVideos = [
 ];
 
 let shortsVideos = [
-  { type: 'youtube', url: "https://youtu.be/oEgIbYKnqIo", section: 'shorts' },
+  { type: 'youtube', url: "https://youtu.be/oyCxBwL3ht0", section: 'shorts' },
   { type: 'youtube', url:"https://youtu.be/aa7j5OHIT1g", thumb: "images/srhthumb1.png", section: 'shorts' },
   { type: 'youtube', url: "https://youtu.be/8KG_obanoro", section: 'shorts' },
 ];
