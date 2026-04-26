@@ -27,6 +27,7 @@ let carouselIndex = 0;
 
 let portfolioVideos = [
   { type: 'youtube', url: 'https://youtu.be/eP33HKyUKOU', section: 'portfolio' },
+  { type: 'youtube', url: 'https://youtu.be/VWQpOBE-ics', section: 'portfolio' },
   { type: 'youtube', url: 'https://youtu.be/5-NWTJOtW5s', section: 'portfolio' },
   { type: 'youtube', url: 'https://youtu.be/ROk8W1-p0o0', section: 'portfolio' },
   { type: 'youtube', url: 'https://youtu.be/SpKBJxTKNjU', section: 'portfolio' },
