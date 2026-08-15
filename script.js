@@ -27,12 +27,13 @@ let carouselIndex = 0;
 
 let portfolioVideos = [
   { type: 'youtube', url: 'https://youtu.be/yrt7jsN99XQ', section: 'portfolio' },
+  { type: 'youtube', url: 'https://youtu.be/YxaNpngHOgM', section: 'portfolio' },
   { type: 'youtube', url: 'https://youtu.be/YsZh0wAcsHU', section: 'portfolio' },
   { type: 'youtube', url: 'https://youtu.be/eP33HKyUKOU', section: 'portfolio' },
   { type: 'youtube', url: 'https://youtu.be/5-NWTJOtW5s', section: 'portfolio' },
+  { type: 'youtube', url: 'https://youtu.be/VWQpOBE-ics', section: 'portfolio' },
   { type: 'youtube', url: 'https://youtu.be/ROk8W1-p0o0', section: 'portfolio' },
   { type: 'youtube', url: 'https://youtu.be/Co7QfOb1NQ4', section: 'portfolio' },
-  { type: 'youtube', url: 'https://youtu.be/VWQpOBE-ics', section: 'portfolio' },
   { type: 'youtube', url: 'https://youtu.be/SpKBJxTKNjU', section: 'portfolio' },
   { type: 'youtube', url: 'https://youtu.be/tYbc-T-UYng', section: 'portfolio' },
   { type: 'youtube', url: 'https://youtu.be/mJ6uk5oh30Y?t=5', section: 'portfolio' },
