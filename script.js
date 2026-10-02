@@ -56,6 +56,7 @@ let shortsVideos = [
 let channels = [
   { name: 'Smurfzin', url: 'https://www.youtube.com/@Smurfzin', img: 'images/smurfprofile.jpg', subs: '2.13M' },
   { name: 'Delayed MC', url: 'https://www.youtube.com/@delayedmc', img: 'images/4SCbBkZ.png', subs: '62.4K' },
+  { name: 'Kotuhx', url: 'https://www.youtube.com/@Kotuhh', img: 'images/kotuhx.jpg', subs: '27.5K' },
   { name: 'Donoghan', url: 'https://www.youtube.com/@pdonoghan', img: 'images/donoghan.jpg', subs: '26.1K' },
   { name: 'lobbiart', url: 'https://www.youtube.com/@lobbiartENG', img: 'images/lobbiart.jpg', subs: '1.3K' },
   { name: 'SONBLACKS', url: 'https://www.youtube.com/@sonblacks', img: 'images/son.jpg', subs: '236' },
