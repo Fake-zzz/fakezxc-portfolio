@@ -26,6 +26,7 @@ let lang = 'en';
 let carouselIndex = 0;
 
 let portfolioVideos = [
+  { type: 'youtube', url: 'https://youtu.be/nnGX4iV3dss', section: 'portfolio' },
   { type: 'youtube', url: 'https://youtu.be/yrt7jsN99XQ', section: 'portfolio' },
   { type: 'youtube', url: 'https://youtu.be/YxaNpngHOgM', section: 'portfolio' },
   { type: 'youtube', url: 'https://youtu.be/YsZh0wAcsHU', section: 'portfolio' },
